@@ -63,8 +63,10 @@ export interface AthleteProfile {
   id: number;
   firstname: string;
   lastname: string;
-  sex: "M" | "F" | (string & {});
-  weight: number;
+  /** Optional — omitted from the committed snapshot for privacy. */
+  sex?: "M" | "F" | (string & {});
+  /** Optional — omitted from the committed snapshot for privacy. */
+  weight?: number;
   city: string;
   state: string;
   country: string;
