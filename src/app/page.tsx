@@ -1,5 +1,6 @@
 import { getStravaSource, isLive } from "@/lib/strava";
 import { buildDashboard } from "@/lib/training/derive";
+import { StravaStatus } from "@/components/StravaStatus";
 
 // Incrementally re-render every 10 minutes — the "on-load refresh" cadence.
 export const revalidate = 600;
@@ -85,14 +86,7 @@ export default async function Home() {
         </section>
 
         <footer className="mt-10 flex flex-wrap items-center justify-between gap-3 text-xs text-ink-4">
-          <span className="inline-flex items-center gap-2">
-            <span
-              className="h-1.5 w-1.5 rounded-full"
-              style={{ background: live ? "var(--pos)" : "var(--ink-4)" }}
-            />
-            {live ? "Live" : "Snapshot"} · updated{" "}
-            {new Date(snapshot.fetched_at).toLocaleDateString("en-CA")}
-          </span>
+          <StravaStatus live={live} fetchedAt={snapshot.fetched_at} />
           <a
             href="https://www.strava.com"
             target="_blank"
