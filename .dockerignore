@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+npm-debug.log
+README.md
+DEPLOY.md
+.env
+.env.local
+scripts
+*.log
+.DS_Store
+data
+caddy_data
+caddy_config

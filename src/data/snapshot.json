@@ -1,0 +1,1450 @@
+{
+  "_comment": "Real Strava data for athlete 62561435 (Nicolaas Earley), fetched 2026-06-13 via Strava MCP. Field names mirror Strava's REST API (SummaryActivity / SummaryGear / AthleteZones) so this snapshot can be swapped for live OAuth responses. Distances in metres, times in seconds, speeds in m/s. Window: 2026-05-01 .. 2026-06-13.",
+  "fetched_at": "2026-06-13T12:00:00",
+  "athlete": {
+    "id": 62561435,
+    "firstname": "Nicolaas",
+    "lastname": "Earley",
+    "sex": "M",
+    "weight": 84,
+    "city": "London",
+    "state": "Ontario",
+    "country": "Canada",
+    "measurement_preference": "meters"
+  },
+  "zones": {
+    "heart_rate": {
+      "source": "Manual",
+      "zones": [
+        {
+          "min": 0,
+          "max": 133
+        },
+        {
+          "min": 134,
+          "max": 147
+        },
+        {
+          "min": 148,
+          "max": 161
+        },
+        {
+          "min": 162,
+          "max": 175
+        },
+        {
+          "min": 176,
+          "max": -1
+        }
+      ]
+    },
+    "run_pace": {
+      "source": "PerformancePredictions",
+      "sample_race_pace": {
+        "best_effort_type": "Fastest5k",
+        "time": "20m 30s",
+        "is_estimated": true
+      },
+      "zones_speed_ms": [
+        {
+          "min": 0,
+          "max": 2.915
+        },
+        {
+          "min": 2.915,
+          "max": 3.386
+        },
+        {
+          "min": 3.386,
+          "max": 3.772
+        },
+        {
+          "min": 3.772,
+          "max": 4.029
+        },
+        {
+          "min": 4.029,
+          "max": 4.286
+        },
+        {
+          "min": 4.286,
+          "max": -1
+        }
+      ]
+    },
+    "power": {
+      "source": "EstimatedFtpFromPower",
+      "ftp": 186,
+      "ftp_is_estimated": true
+    }
+  },
+  "gear": [
+    {
+      "id": "21639677",
+      "type": "shoe",
+      "name": "PUMA Deviate Nitro 3",
+      "nickname": "Hyrox",
+      "brand": "PUMA",
+      "model_name": "Deviate Nitro 3",
+      "distance": 483909,
+      "retired": false
+    },
+    {
+      "id": "18032519",
+      "type": "shoe",
+      "name": "On Cloudsurfers",
+      "nickname": "Cloudsurfers",
+      "brand": "On",
+      "model_name": "Cloudsurfers",
+      "distance": 147040,
+      "retired": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "18902357824",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-13T07:14:47",
+      "gear_id": "21639677",
+      "distance": 6655.91,
+      "moving_time": 2241,
+      "elapsed_time": 2253,
+      "total_elevation_gain": 52.8,
+      "average_speed": 2.9700624721106648,
+      "max_speed": 3.98,
+      "average_heartrate": 141.1,
+      "max_heartrate": 153,
+      "average_watts": 262.6,
+      "relative_effort": 34,
+      "calories": 528,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1,
+      "map_polyline": "ofjeGrrboNy@qDm@eBW{AQq@y@uDIUY]M_@GIIAc@@OAk@WWCSHmAh@g@R_@J}@^]HK?MMS}@SeACa@@ILM|B_AxAs@JQL]T]@I@YCMIc@Mg@]qBCc@@}@CSKYYc@IUAOHSJGv@AbDCZMLMNQTe@DE^OLCj@Ab@Dp@f@^PH?LKJOd@}@f@WZGZDNDbAj@rATLHn@`Ah@f@TLF@^AFBtA`Dd@jB\\dBTf@Rt@^lBDd@@fADx@P~BHz@^pB\\hA`AjCpAlEl@`BhBxH\\fADd@zArGzB~HZnBJpAFFVLh@^jCnAjA`@vEhAlEz@dB^l@R`JfBj@Nf@VRD?KGGYM[Wg@WM@CF@X\\xA^z@hB~AlA~@fAdAb@\\VNx@ZXBJGJm@JWCMMQOYeA]o@YgDqBaB{@kA]wAYyGuAe@GcGkAiDs@gDgAsAg@g@MWMEEAKHiASQWOkAWmBO_A@eAFgAVgA^k@XwDvAeBt@y@h@m@TcA^{A\\eDpAg@TaC|@o@ZM?GEO]a@aCmB{J"
+    },
+    {
+      "id": "18889542826",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-12T06:00:25",
+      "distance": 0,
+      "moving_time": 3495,
+      "elapsed_time": 3495,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 16,
+      "calories": 485,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18881036082",
+      "name": "5K TT at the Track",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-11T12:27:18",
+      "gear_id": "21639677",
+      "distance": 5000.72,
+      "moving_time": 1286,
+      "elapsed_time": 1289,
+      "total_elevation_gain": 0,
+      "average_speed": 3.8885847589424576,
+      "max_speed": 5.51768,
+      "average_heartrate": 176,
+      "max_heartrate": 186,
+      "relative_effort": 82,
+      "calories": 517,
+      "achievement_count": 17,
+      "pr_count": 16,
+      "kudos_count": 5,
+      "map_polyline": "gnmeG~t`oNQ@SHQRGPERAZBRH\\VVXFlC\\VAJERQLYDS?_@CSKYKMKGUGcCYWCM@ULKLELGZ?d@F\\FJLLRJvC\\R@NEROJQFU@]Ca@GOOU[MsC]UAIBUNOZGZ@\\DXJVRNHDvC\\X?RITWH[@a@E[EQY[SEsC_@YBUJQXGXAb@DRJXNRLDxC^N@RETQLSFa@?OC[IWKOQK]GaCYSAUHQNM\\C^@ZHVHPPLPFjCZL@RATMLQHUB[A_@IWOWIEc@KcC[Q?UHSRITE`@@\\HVJRLHTHdCZT@JAPEPQJ[DYA]I]KSQMUEcC[UAI@UHSZIZAXD`@FNLRJFRFdCZ`@?TINQJYB[Ce@IWQUWIuC_@S?QFSPOd@A^BXHTPVLF~C`@H?TCPKNWFW@]Ik@KSUO{Ca@]?QHQRM`@A^Jh@JRLJ\\H|BV\\BVIPSHSD]?YG[KUSOWGkC[W?QFQRKRE^@`@HVLRRNzC^V?PERQHUF_@?WG]OYQKQGmC[[?QFQRITE^@XF\\NRPLxC`@^?RIPUHSB_@AYI]MSSMyC_@QAOBQHQVIVA`@@PHXLTPJNDfCZV@JAPIPSHYBYAa@M]OQUKyC_@YBQHKLM\\CX@`@JXLRLHVFhCZP?G?"
+    },
+    {
+      "id": "18880855674",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-11T05:44:16",
+      "distance": 0,
+      "moving_time": 2400,
+      "elapsed_time": 2400,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 4,
+      "calories": 204,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18862757791",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-10T05:45:53",
+      "distance": 0,
+      "moving_time": 3474,
+      "elapsed_time": 3474,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 7,
+      "calories": 288,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18849842575",
+      "name": "Morning Yog with my pal Jess",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-09T07:30:40",
+      "gear_id": "21639677",
+      "distance": 5509.6,
+      "moving_time": 2103,
+      "elapsed_time": 2268,
+      "total_elevation_gain": 24.4,
+      "average_speed": 2.619876367094627,
+      "max_speed": 6.14,
+      "relative_effort": 8,
+      "calories": 424,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 3,
+      "map_polyline": "ypeeGjekoNN]^m@Rg@^}AJ}@H{@V{E?q@FgA^oD\\oBDq@?}@J}@?qARsCToBJsAFeDVkEH{B@aBD[?u@Do@DqDBs@A{@BcBCaABsB?sFCsABcBGe@CaANgBMeBc@yE[yA]aCYaA_@aBWw@Mi@mAgDmA{DYu@]m@Y_As@iBi@cB_@y@qAuEo@gBW}A_@qA[s@Km@As@Qu@KSe@Wi@i@U[gBkB_@[}BeCoAmAF@dBfBXRl@p@tAlAj@r@fAhAZ^f@ZHJPv@@x@D\\r@lBb@rBl@pB`ApDLb@vAjDbAxCt@nBl@pAv@hCf@pAjAdE`@lBZnBXfAj@|FJ`BGjBDzBCdBFxHIlE@rEGjC@vAElAm@`KEpCw@vJ"
+    },
+    {
+      "id": "18834544849",
+      "name": "Morning Ride",
+      "sport_type": "Ride",
+      "start_date_local": "2026-06-08T05:32:10",
+      "distance": 0,
+      "moving_time": 1756,
+      "elapsed_time": 1756,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 3,
+      "calories": 163,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18824801408",
+      "name": "Forest City Road Race HM",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-07T07:59:09",
+      "gear_id": "21639677",
+      "distance": 21268.2,
+      "moving_time": 6316,
+      "elapsed_time": 6386,
+      "total_elevation_gain": 108.4,
+      "average_speed": 3.3673527549081697,
+      "max_speed": 7.36,
+      "average_heartrate": 164.7,
+      "max_heartrate": 180,
+      "average_watts": 294.8,
+      "relative_effort": 274,
+      "calories": 1802,
+      "achievement_count": 21,
+      "pr_count": 21,
+      "kudos_count": 6,
+      "workout_type": "race",
+      "map_polyline": "mfkeG~q{nNpEeBPBPVfB`JLpAx@xEDr@MlAAh@h@pEfA`G^fAd@tBn@~DGVMDyCTyB\\_A\\aCpAgBjAm@JQHQ`@[pCK`@y@B}@^WT{CrEgBjDc@fBEzA@b@FN`DFfEPNDFL@|AKnGGb@mCzAkIdD_CfAoBp@iJxDy@ROEGQ_AgF[gAk@gCS@iAr@i@HmBGqGu@c@?MLB`BPrA?d@_@lFUxAsAzFW|A@p@CXg@nCYf@{@v@gBb@s@@m@Rc@AgB]o@Um@AaAc@_Ao@cASYOqAeBu@wAuAuAi@aDIQiA^m@NeAAg@MsCsA][MW}@wEAWBMdAq@vAe@zCqAJO@QuAqHuDyQq@{DgFoWmBkJsAaHIw@?KLU`Bw@vNcGr@QJDJXdC`NJNXDjc@yQLQD]YwBcDqQk@yB{@mEIQS?k@RiFrB_KpE_DhAmCnAmG`CcHvCgAXOIIQ]wAa@eCi@eC}DoTO_@OCcCfAeCfBoClAwZvLyAl@_Al@}IhCsKhEcBv@oAv@oAf@YVMd@BZf@`BRhBl@pB?ZOv@BZxDvQlBnKlChMNHJCdB{@VWP_@Vy@V}Ap@uBh@{@d@c@^Sr@Qz@Et@Jv@h@F?DCx@_CRUHAdAn@bAGbAZv@Kl@i@TGf@HXXJj@HpFLr@Vv@Hh@?h@SrA@h@FZlAjCHz@I~BBnA[~DQl@g@n@GT?NN^pC`DJR@PEXILSFk@Ds@Z}@tB{AzBc@fACt@J|A^`At@pAPp@LbALXf@N`AOlACf@a@p@K`@Fl@Zr@?RGj@k@b@GnDoAl@o@v@Q\\C~BLrAKb@@j@Sx@P`@VdA\\n@?X\\Rn@NJRDFAJOBoBKCIXeApOMfEn@pCN\\PDp@Or@@fAr@n@XJN?Ru@lHHn@Nj@\\z@VxAAXGNYLiP_CWOG_@LaAFcCN{BEc@WcA@[jAkBdCuBd@{@Jc@Fs@?_AbA_OFgBKkB?k@BMXWtJaETS?UU}@q@qE}AwHC[BWtQ}H`Be@`Ai@|CiArFcCbI_DtCwAzEeBRDFNPpAfA`G\\fA`@hCn@jCXr@~@FhALtBFn@Lr@CfB}@rBEjBa@p@WVYVg@Rk@?UWu@a@u@wAoHOcA@MJQRK|P_HVOBMa@uBKw@kDmRAWJ}@BcAaBmI?k@FMPMn@O|CwAlJyD"
+    },
+    {
+      "id": "18795021595",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-05T05:56:23",
+      "gear_id": "21639677",
+      "distance": 4304.93,
+      "moving_time": 1592,
+      "elapsed_time": 1592,
+      "total_elevation_gain": 38,
+      "average_speed": 2.70410175879397,
+      "max_speed": 3.31659,
+      "relative_effort": 12,
+      "calories": 337,
+      "achievement_count": 1,
+      "pr_count": 0,
+      "kudos_count": 1,
+      "map_polyline": "cjkeGhkeoNx@fE|@bERtA^dBv@~CdAdFf@pCdBdJDv@ANKZAFNf@PNHNNdA?n@Gz@E\\_D~IMn@E^Av@Dx@PjA?VMTOLg@N[F_@A]Ga@Q[We@q@_@aA[cAc@s@iDoDeBaAc@a@GMBKpAsCj@}@h@m@l@g@b@Wn@Wj@Ob@Gb@CtBBx@Ad@GV@xATl@EJ@JJJRN|@@j@Ez@Mv@IPCBi@c@_@Sm@U_@GyDBgAA}@Jm@Vw@p@i@z@_AnBIJEBaAk@g@c@IKBOfAcCh@_Ap@w@h@e@\\Ud@U`AUhAMnB@bAC`@E\\@r@Jb@@b@AFA@ICs@Ba@Io@U{@i@uCU_AmAgH{A_Hk@uCe@aBg@uC{@mDCW"
+    },
+    {
+      "id": "18767956128",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-03T05:42:28",
+      "distance": 0,
+      "moving_time": 2565,
+      "elapsed_time": 2565,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 8,
+      "calories": 303,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18756901229",
+      "name": "Km intervals",
+      "sport_type": "Run",
+      "start_date_local": "2026-06-02T10:20:25",
+      "gear_id": "21639677",
+      "distance": 8217.95,
+      "moving_time": 2621,
+      "elapsed_time": 2881,
+      "total_elevation_gain": 52.2,
+      "average_speed": 3.1354254101487986,
+      "max_speed": 11.525,
+      "average_heartrate": 155.8,
+      "max_heartrate": 176,
+      "average_watts": 295.5,
+      "relative_effort": 78,
+      "calories": 652,
+      "achievement_count": 8,
+      "pr_count": 8,
+      "kudos_count": 2,
+      "description": "15min WU / 4x 1km @ 4:20-4:25 // 90s rest / 5min CD",
+      "workout_type": "workout",
+      "map_polyline": "ifjeGrsboN_AsEq@gBa@mBAOBo@MsA[{A@WxFsBlDyAxCgAlD{Av@YNCJ?JNd@bBNv@PxEJ|AJ`ATlA\\nAhAzCtArEh@vAxAdGXpARl@Jt@`BzGN`@`@\\LRn@vBd@xAl@|CJlALH`CjA~@`@p@RtHdBr@Hr@R\\BnCp@lARhCj@rAT|Ad@@J_@fB\\^rC`Cx@x@fAx@ZPv@P\\?VCnA[PKX[PG|@TfA^r@Fb@A`AR`@Db@LJFb@b@tA~AzArBhCjClArA~BxB\\b@\\ZXb@^PRTRp@@f@Dl@h@zAd@nBb@tAJf@Z|@TfA\\nAt@fBjBhFf@jArBpG^~@ZhAb@pAf@nBThAVfBRt@PfBPnABp@NdCMhBAMHM@OHY?YMmAg@eGIm@Y_AEq@SoAa@mAG_@Uw@mDqKeAiCYcA}AgEc@eA}@iDs@_C_@cB{@}BOw@Au@G]BCAXDUe@g@k@c@q@{@sAqA{@s@[c@]Yk@u@cBaBoCcDW]Wc@Y[g@]wBU_BIi@[e@Ow@OG?MD]d@QL{ARc@?]Gg@S[Q{BuBiByAGG?IBBi@c@OaCwAa@iBa@_FaA[CmCk@]IYOaDk@}A]{Bq@mDeB]Y]Q]GYK_@Au@MsACw@B}@N"
+    },
+    {
+      "id": "18753690306",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-02T05:34:01",
+      "distance": 0,
+      "moving_time": 4344,
+      "elapsed_time": 4344,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 12,
+      "calories": 411,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18739941116",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-06-01T06:17:01",
+      "distance": 0,
+      "moving_time": 1844,
+      "elapsed_time": 1844,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 4,
+      "calories": 192,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18729616163",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-31T07:41:23",
+      "gear_id": "21639677",
+      "distance": 18131.8,
+      "moving_time": 5648,
+      "elapsed_time": 7009,
+      "total_elevation_gain": 143.8,
+      "average_speed": 3.2103045325779034,
+      "max_speed": 5.33556,
+      "average_heartrate": 151.7,
+      "max_heartrate": 166,
+      "average_watts": 281.9,
+      "relative_effort": 151,
+      "calories": 1487,
+      "achievement_count": 19,
+      "pr_count": 19,
+      "kudos_count": 5,
+      "workout_type": "long_run"
+    },
+    {
+      "id": "18700600032",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-29T05:57:14",
+      "distance": 0,
+      "moving_time": 2985,
+      "elapsed_time": 2985,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 7,
+      "calories": 262,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18687051152",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-28T05:35:06",
+      "distance": 0,
+      "moving_time": 3651,
+      "elapsed_time": 3651,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 5,
+      "calories": 283,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18674877151",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-27T05:43:09",
+      "distance": 0,
+      "moving_time": 4184,
+      "elapsed_time": 4184,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 11,
+      "calories": 420,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18666498492",
+      "name": "Afternoon Ride",
+      "sport_type": "Ride",
+      "start_date_local": "2026-05-26T14:16:07",
+      "distance": 13754.7,
+      "moving_time": 2442,
+      "elapsed_time": 6797,
+      "total_elevation_gain": 99.2,
+      "average_speed": 5.632555282555283,
+      "max_speed": 10.04,
+      "relative_effort": 12,
+      "calories": 367,
+      "achievement_count": 11,
+      "pr_count": 11,
+      "kudos_count": 2
+    },
+    {
+      "id": "18659484692",
+      "name": "Morning Ride",
+      "sport_type": "Ride",
+      "start_date_local": "2026-05-26T06:44:21",
+      "distance": 0,
+      "moving_time": 1201,
+      "elapsed_time": 1201,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 2,
+      "calories": 143,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18659237859",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-26T05:46:59",
+      "distance": 0,
+      "moving_time": 3273,
+      "elapsed_time": 3273,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 6,
+      "calories": 247,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18654775493",
+      "name": "Evening Workout",
+      "sport_type": "Workout",
+      "start_date_local": "2026-05-25T18:04:03",
+      "distance": 0,
+      "moving_time": 3358,
+      "elapsed_time": 3358,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 45,
+      "calories": 818,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18650632725",
+      "name": "Morning Physical Therapy",
+      "sport_type": "PhysicalTherapy",
+      "start_date_local": "2026-05-25T05:47:36",
+      "distance": 0,
+      "moving_time": 3275,
+      "elapsed_time": 3275,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 61,
+      "calories": 710,
+      "achievement_count": 1,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18635126271",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-24T08:39:22",
+      "gear_id": "21639677",
+      "distance": 4826.06,
+      "moving_time": 1756,
+      "elapsed_time": 1858,
+      "total_elevation_gain": 44.4,
+      "average_speed": 2.748325740318907,
+      "max_speed": 4.64,
+      "relative_effort": 32,
+      "calories": 431,
+      "achievement_count": 5,
+      "pr_count": 4,
+      "kudos_count": 3
+    },
+    {
+      "id": "18634606979",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-24T07:51:08",
+      "gear_id": "21639677",
+      "distance": 7001.81,
+      "moving_time": 2051,
+      "elapsed_time": 2094,
+      "total_elevation_gain": 55,
+      "average_speed": 3.413851779619698,
+      "max_speed": 5.28,
+      "relative_effort": 51,
+      "calories": 557,
+      "achievement_count": 8,
+      "pr_count": 8,
+      "kudos_count": 3
+    },
+    {
+      "id": "18622775575",
+      "name": "Morning Physical Therapy",
+      "sport_type": "PhysicalTherapy",
+      "start_date_local": "2026-05-23T10:09:14",
+      "distance": 0,
+      "moving_time": 2578,
+      "elapsed_time": 2578,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 36,
+      "calories": 475,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18606567795",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-22T06:00:26",
+      "distance": 0,
+      "moving_time": 3058,
+      "elapsed_time": 3058,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 9,
+      "calories": 327,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18593519622",
+      "name": "Morning Ride",
+      "sport_type": "Ride",
+      "start_date_local": "2026-05-21T06:52:08",
+      "distance": 0,
+      "moving_time": 902,
+      "elapsed_time": 902,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 1,
+      "calories": 86,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18593230456",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-21T05:45:51",
+      "distance": 0,
+      "moving_time": 3459,
+      "elapsed_time": 3459,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 10,
+      "calories": 408,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18579832484",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-20T05:33:12",
+      "distance": 0,
+      "moving_time": 3796,
+      "elapsed_time": 3796,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 7,
+      "calories": 312,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18566186588",
+      "name": "Morning Ride",
+      "sport_type": "Ride",
+      "start_date_local": "2026-05-19T06:43:10",
+      "distance": 0,
+      "moving_time": 1123,
+      "elapsed_time": 1123,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 2,
+      "calories": 116,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18565907060",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-19T05:46:18",
+      "distance": 0,
+      "moving_time": 3294,
+      "elapsed_time": 3294,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 4,
+      "calories": 250,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18536004750",
+      "name": "Afternoon Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-16T17:47:43",
+      "gear_id": "21639677",
+      "distance": 2019.71,
+      "moving_time": 605,
+      "elapsed_time": 693,
+      "total_elevation_gain": 8.8,
+      "average_speed": 3.3383636363636366,
+      "max_speed": 5.22222,
+      "relative_effort": 10,
+      "calories": 150,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18529599732",
+      "name": "Morning Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-16T09:01:50",
+      "gear_id": "21639677",
+      "distance": 5001.87,
+      "moving_time": 1387,
+      "elapsed_time": 1561,
+      "total_elevation_gain": 17.6,
+      "average_speed": 3.6062509012256667,
+      "max_speed": 6.565,
+      "relative_effort": 36,
+      "calories": 382,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 3
+    },
+    {
+      "id": "18484272842",
+      "name": "Race Week Taper Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-12T18:43:33",
+      "gear_id": "21639677",
+      "distance": 8428.31,
+      "moving_time": 2614,
+      "elapsed_time": 2636,
+      "total_elevation_gain": 67.8,
+      "average_speed": 3.2242960979342,
+      "max_speed": 4.66,
+      "relative_effort": 47,
+      "calories": 662,
+      "achievement_count": 3,
+      "pr_count": 2,
+      "kudos_count": 2
+    },
+    {
+      "id": "18470043390",
+      "name": "Evening Workout",
+      "sport_type": "Workout",
+      "start_date_local": "2026-05-11T18:08:02",
+      "distance": 0,
+      "moving_time": 2169,
+      "elapsed_time": 2169,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 38,
+      "calories": 480,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 3
+    },
+    {
+      "id": "18470043403",
+      "name": "Afternoon Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-11T17:45:46",
+      "gear_id": "21639677",
+      "distance": 1758.79,
+      "moving_time": 626,
+      "elapsed_time": 626,
+      "total_elevation_gain": 0,
+      "average_speed": 2.8095686900958468,
+      "max_speed": 5.3,
+      "relative_effort": 6,
+      "calories": 138,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18458343447",
+      "name": "Sunday Run Club",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-10T07:54:03",
+      "gear_id": "21639677",
+      "distance": 12416.5,
+      "moving_time": 3764,
+      "elapsed_time": 4910,
+      "total_elevation_gain": 109.6,
+      "average_speed": 3.29875132837407,
+      "max_speed": 5.765,
+      "average_heartrate": 152.4,
+      "max_heartrate": 170,
+      "average_watts": 287.3,
+      "relative_effort": 104,
+      "calories": 1027,
+      "achievement_count": 19,
+      "pr_count": 18,
+      "kudos_count": 5
+    },
+    {
+      "id": "18444190512",
+      "name": "Afternoon Walk",
+      "sport_type": "Walk",
+      "start_date_local": "2026-05-09T13:07:00",
+      "distance": 2842.13,
+      "moving_time": 1822,
+      "elapsed_time": 3634,
+      "total_elevation_gain": 26.8,
+      "average_speed": 1.5598957189901208,
+      "max_speed": 2.44667,
+      "relative_effort": 4,
+      "calories": 225,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 2
+    },
+    {
+      "id": "18440606237",
+      "name": "Morning Workout",
+      "sport_type": "Workout",
+      "start_date_local": "2026-05-09T10:15:56",
+      "distance": 0,
+      "moving_time": 2493,
+      "elapsed_time": 2493,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 46,
+      "calories": 619,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 3
+    },
+    {
+      "id": "18423521441",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-08T06:00:49",
+      "distance": 0,
+      "moving_time": 2886,
+      "elapsed_time": 2886,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 7,
+      "calories": 246,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 2
+    },
+    {
+      "id": "18410378811",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-07T05:54:40",
+      "distance": 0,
+      "moving_time": 3265,
+      "elapsed_time": 3265,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 18,
+      "calories": 463,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18397486847",
+      "name": "Morning Weight Training",
+      "sport_type": "WeightTraining",
+      "start_date_local": "2026-05-06T06:19:30",
+      "distance": 0,
+      "moving_time": 840,
+      "elapsed_time": 840,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 16,
+      "calories": 209,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18396442493",
+      "name": "Morning Yoga",
+      "sport_type": "Yoga",
+      "start_date_local": "2026-05-06T05:33:52",
+      "distance": 0,
+      "moving_time": 690,
+      "elapsed_time": 690,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 0,
+      "calories": 55,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18383424373",
+      "name": "Morning Physical Therapy",
+      "sport_type": "PhysicalTherapy",
+      "start_date_local": "2026-05-05T05:47:46",
+      "distance": 0,
+      "moving_time": 3687,
+      "elapsed_time": 3687,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 17,
+      "calories": 561,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 1
+    },
+    {
+      "id": "18378592693",
+      "name": "Evening Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-04T18:57:15",
+      "gear_id": "21639677",
+      "distance": 5762.15,
+      "moving_time": 1796,
+      "elapsed_time": 1801,
+      "total_elevation_gain": 48,
+      "average_speed": 3.208324053452116,
+      "max_speed": 4.18,
+      "relative_effort": 29,
+      "calories": 462,
+      "achievement_count": 1,
+      "pr_count": 1,
+      "kudos_count": 1
+    },
+    {
+      "id": "18369753053",
+      "name": "Morning Physical Therapy",
+      "sport_type": "PhysicalTherapy",
+      "start_date_local": "2026-05-04T05:52:43",
+      "distance": 0,
+      "moving_time": 1477,
+      "elapsed_time": 1477,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 10,
+      "calories": 274,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18348493054",
+      "name": "Morning Workout",
+      "sport_type": "Workout",
+      "start_date_local": "2026-05-02T10:07:12",
+      "distance": 0,
+      "moving_time": 4750,
+      "elapsed_time": 4750,
+      "total_elevation_gain": 0,
+      "average_speed": 0,
+      "max_speed": 0,
+      "relative_effort": 45,
+      "calories": 861,
+      "achievement_count": 0,
+      "pr_count": 0,
+      "kudos_count": 0
+    },
+    {
+      "id": "18338492679",
+      "name": "Afternoon Run",
+      "sport_type": "Run",
+      "start_date_local": "2026-05-01T17:30:58",
+      "gear_id": "21639677",
+      "distance": 5514.45,
+      "moving_time": 1677,
+      "elapsed_time": 1920,
+      "total_elevation_gain": 25,
+      "average_speed": 3.288282647584973,
+      "max_speed": 7.50588,
+      "relative_effort": 32,
+      "calories": 419,
+      "achievement_count": 17,
+      "pr_count": 16,
+      "kudos_count": 2
+    }
+  ],
+  "best_efforts_by_activity": {
+    "18881036082": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 90
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 186
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 232
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 382
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 813
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1287
+      }
+    ],
+    "18824801408": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 101
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 212
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 268
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 444
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 913
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1447
+      },
+      {
+        "name": "10K",
+        "distance": 10000,
+        "elapsed_time": 2924
+      },
+      {
+        "name": "15K",
+        "distance": 15000,
+        "elapsed_time": 4415
+      },
+      {
+        "name": "10 mile",
+        "distance": 16093,
+        "elapsed_time": 4746
+      },
+      {
+        "name": "20K",
+        "distance": 20000,
+        "elapsed_time": 5905
+      },
+      {
+        "name": "Half-Marathon",
+        "distance": 21097,
+        "elapsed_time": 6242
+      }
+    ],
+    "18756901229": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 77
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 184
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 235
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 447
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 931
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1580
+      }
+    ],
+    "18729616163": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 117
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 238
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 296
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 479
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 978
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1536
+      },
+      {
+        "name": "10K",
+        "distance": 10000,
+        "elapsed_time": 3229
+      },
+      {
+        "name": "15K",
+        "distance": 15000,
+        "elapsed_time": 5912
+      },
+      {
+        "name": "10 mile",
+        "distance": 16093,
+        "elapsed_time": 6251
+      }
+    ],
+    "18458343447": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 94
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 203
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 254
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 421
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 917
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1424
+      },
+      {
+        "name": "10K",
+        "distance": 10000,
+        "elapsed_time": 4078
+      }
+    ],
+    "18902357824": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 124
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 254
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 319
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 523
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 1049
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1668
+      }
+    ],
+    "16118515713": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 115
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 237
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 300
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 485
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 974
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1524
+      },
+      {
+        "name": "10K",
+        "distance": 10000,
+        "elapsed_time": 3088
+      },
+      {
+        "name": "15K",
+        "distance": 15000,
+        "elapsed_time": 4688
+      },
+      {
+        "name": "10 mile",
+        "distance": 16093,
+        "elapsed_time": 5033
+      },
+      {
+        "name": "20K",
+        "distance": 20000,
+        "elapsed_time": 6329
+      },
+      {
+        "name": "Half-Marathon",
+        "distance": 21097,
+        "elapsed_time": 6700
+      }
+    ],
+    "16252976207": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 104
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 233
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 290
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 508
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 1092
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1695
+      },
+      {
+        "name": "10K",
+        "distance": 10000,
+        "elapsed_time": 3614
+      },
+      {
+        "name": "15K",
+        "distance": 15000,
+        "elapsed_time": 5464
+      },
+      {
+        "name": "10 mile",
+        "distance": 16093,
+        "elapsed_time": 5871
+      },
+      {
+        "name": "20K",
+        "distance": 20000,
+        "elapsed_time": 7447
+      },
+      {
+        "name": "Half-Marathon",
+        "distance": 21097,
+        "elapsed_time": 7886
+      }
+    ],
+    "15879822523": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 131
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 269
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 336
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 546
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 1101
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 1921
+      }
+    ],
+    "15637458659": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 131
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 278
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 356
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 574
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 1459
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 2126
+      }
+    ],
+    "15558680138": [
+      {
+        "name": "400m",
+        "distance": 400,
+        "elapsed_time": 141
+      },
+      {
+        "name": "1/2 mile",
+        "distance": 805,
+        "elapsed_time": 288
+      },
+      {
+        "name": "1K",
+        "distance": 1000,
+        "elapsed_time": 365
+      },
+      {
+        "name": "1 mile",
+        "distance": 1609,
+        "elapsed_time": 596
+      },
+      {
+        "name": "2 mile",
+        "distance": 3219,
+        "elapsed_time": 1230
+      },
+      {
+        "name": "5K",
+        "distance": 5000,
+        "elapsed_time": 2064
+      }
+    ]
+  },
+  "season_totals_2026": {
+    "_comment": "Strava GPS-recorded RUN totals for 2026 (running only — excludes cycling/other). Summed from real Run activities with recorded distance over 2026-02-16 .. 2026-06-13. Treadmill + mixed-cardio runs that Strava logged with no distance are added back via config.manualRunAdjustments in the derivation layer.",
+    "range_start": "2026-02-16",
+    "range_end": "2026-06-13",
+    "run": {
+      "count": 31,
+      "distance": 230612,
+      "moving_time": 73128,
+      "elevation_gain": 1432
+    },
+    "all": {
+      "count": 175,
+      "moving_time": 561600
+    }
+  },
+  "best_effort_activity_meta": {
+    "16118515713": {
+      "name": "Long Run",
+      "start_date_local": "2025-10-12T09:04:15"
+    },
+    "16252976207": {
+      "name": "Long Run",
+      "start_date_local": "2025-10-25T09:06:54"
+    },
+    "15879822523": {
+      "name": "Morning Run",
+      "start_date_local": "2025-09-20T09:11:32"
+    },
+    "15637458659": {
+      "name": "Morning Run",
+      "start_date_local": "2025-08-30T09:06:41"
+    },
+    "15558680138": {
+      "name": "101st Run of the Year",
+      "start_date_local": "2025-08-23T09:10:12"
+    }
+  }
+}

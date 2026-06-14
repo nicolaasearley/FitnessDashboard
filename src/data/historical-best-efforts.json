@@ -1,0 +1,62 @@
+{
+  "_comment": "Cached pre-2026 best efforts so all-time PRs/history survive without re-fetching the athlete's entire history every render. Strava has no lifetime-PR endpoint, so the live source merges these with best efforts from recently fetched activities. Distances in metres, times in seconds. Names use our canonical keys (1K/5K/10K/15K/20K/Half-Marathon).",
+  "best_efforts_by_activity": {
+    "16118515713": [
+      { "name": "400m", "distance": 400, "elapsed_time": 115 },
+      { "name": "1/2 mile", "distance": 805, "elapsed_time": 237 },
+      { "name": "1K", "distance": 1000, "elapsed_time": 300 },
+      { "name": "1 mile", "distance": 1609, "elapsed_time": 485 },
+      { "name": "2 mile", "distance": 3219, "elapsed_time": 974 },
+      { "name": "5K", "distance": 5000, "elapsed_time": 1524 },
+      { "name": "10K", "distance": 10000, "elapsed_time": 3088 },
+      { "name": "15K", "distance": 15000, "elapsed_time": 4688 },
+      { "name": "10 mile", "distance": 16093, "elapsed_time": 5033 },
+      { "name": "20K", "distance": 20000, "elapsed_time": 6329 },
+      { "name": "Half-Marathon", "distance": 21097, "elapsed_time": 6700 }
+    ],
+    "16252976207": [
+      { "name": "400m", "distance": 400, "elapsed_time": 104 },
+      { "name": "1/2 mile", "distance": 805, "elapsed_time": 233 },
+      { "name": "1K", "distance": 1000, "elapsed_time": 290 },
+      { "name": "1 mile", "distance": 1609, "elapsed_time": 508 },
+      { "name": "2 mile", "distance": 3219, "elapsed_time": 1092 },
+      { "name": "5K", "distance": 5000, "elapsed_time": 1695 },
+      { "name": "10K", "distance": 10000, "elapsed_time": 3614 },
+      { "name": "15K", "distance": 15000, "elapsed_time": 5464 },
+      { "name": "10 mile", "distance": 16093, "elapsed_time": 5871 },
+      { "name": "20K", "distance": 20000, "elapsed_time": 7447 },
+      { "name": "Half-Marathon", "distance": 21097, "elapsed_time": 7886 }
+    ],
+    "15879822523": [
+      { "name": "400m", "distance": 400, "elapsed_time": 131 },
+      { "name": "1/2 mile", "distance": 805, "elapsed_time": 269 },
+      { "name": "1K", "distance": 1000, "elapsed_time": 336 },
+      { "name": "1 mile", "distance": 1609, "elapsed_time": 546 },
+      { "name": "2 mile", "distance": 3219, "elapsed_time": 1101 },
+      { "name": "5K", "distance": 5000, "elapsed_time": 1921 }
+    ],
+    "15637458659": [
+      { "name": "400m", "distance": 400, "elapsed_time": 131 },
+      { "name": "1/2 mile", "distance": 805, "elapsed_time": 278 },
+      { "name": "1K", "distance": 1000, "elapsed_time": 356 },
+      { "name": "1 mile", "distance": 1609, "elapsed_time": 574 },
+      { "name": "2 mile", "distance": 3219, "elapsed_time": 1459 },
+      { "name": "5K", "distance": 5000, "elapsed_time": 2126 }
+    ],
+    "15558680138": [
+      { "name": "400m", "distance": 400, "elapsed_time": 141 },
+      { "name": "1/2 mile", "distance": 805, "elapsed_time": 288 },
+      { "name": "1K", "distance": 1000, "elapsed_time": 365 },
+      { "name": "1 mile", "distance": 1609, "elapsed_time": 596 },
+      { "name": "2 mile", "distance": 3219, "elapsed_time": 1230 },
+      { "name": "5K", "distance": 5000, "elapsed_time": 2064 }
+    ]
+  },
+  "best_effort_activity_meta": {
+    "16118515713": { "name": "Long Run", "start_date_local": "2025-10-12T09:04:15" },
+    "16252976207": { "name": "Long Run", "start_date_local": "2025-10-25T09:06:54" },
+    "15879822523": { "name": "Morning Run", "start_date_local": "2025-09-20T09:11:32" },
+    "15637458659": { "name": "Morning Run", "start_date_local": "2025-08-30T09:06:41" },
+    "15558680138": { "name": "101st Run of the Year", "start_date_local": "2025-08-23T09:10:12" }
+  }
+}
