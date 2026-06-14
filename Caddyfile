@@ -1,6 +1,0 @@
-# Caddy reverse proxy with automatic HTTPS (Let's Encrypt).
-# DOMAIN is supplied via the environment (see .env / docker-compose).
-{$DOMAIN} {
-	encode zstd gzip
-	reverse_proxy app:3000
-}

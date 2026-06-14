@@ -10,15 +10,19 @@ export async function GET(req: Request) {
   const code = url.searchParams.get("code");
   const error = url.searchParams.get("error");
 
+  // Prefer explicit APP_URL so the redirect goes to the public domain even
+  // when the container sees req.url as http://0.0.0.0:3000/...
+  const base = (process.env.APP_URL ?? "").replace(/\/$/, "") || url.origin;
+
   if (error || !code) {
-    return NextResponse.redirect(new URL(`/?strava=${error ?? "denied"}`, url.origin));
+    return NextResponse.redirect(`${base}/?strava=${error ?? "denied"}`);
   }
 
   try {
     await exchangeCode(code);
-    return NextResponse.redirect(new URL("/?strava=connected", url.origin));
+    return NextResponse.redirect(`${base}/?strava=connected`);
   } catch (e) {
     console.error("Strava token exchange failed:", e);
-    return NextResponse.redirect(new URL("/?strava=error", url.origin));
+    return NextResponse.redirect(`${base}/?strava=error`);
   }
 }

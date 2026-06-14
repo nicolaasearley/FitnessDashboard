@@ -1,7 +1,9 @@
 # Deploying the dashboard
 
-Self-hosted with Docker + Caddy (automatic HTTPS). The dashboard is public and
-read-only; only you connect Strava, once.
+Self-hosted with Docker, behind **Pangolin** (external reverse proxy + automatic
+HTTPS). The app speaks plain HTTP on port 3000; Pangolin terminates TLS and
+forwards to it. The dashboard is public and read-only; only you connect Strava,
+once.
 
 ## How the data flow works
 
@@ -23,24 +25,37 @@ At <https://www.strava.com/settings/api>:
   e.g. `dashboard.example.com`.
 - Copy the **Client ID** and **Client Secret**.
 
-## 2. Point a domain at your server
-
-Create an A record for your (sub)domain → your VPS public IP. Make sure ports
-**80** and **443** are open.
-
-## 3. Configure and run
+## 2. Run the app container
 
 On the VPS (Docker + Docker Compose installed):
 
 ```bash
 git clone <your-repo> dashboard && cd dashboard
 cp .env.example .env
-# edit .env: DOMAIN, APP_URL (https://DOMAIN), STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET
+# edit .env: APP_URL (https://your-domain), STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET
 docker compose up -d --build
 ```
 
-Caddy provisions a TLS certificate automatically. The dashboard is now live at
-`https://your-domain` (showing the snapshot until you connect).
+This starts a single `app` service listening on **`<host-ip>:3000`** over plain
+HTTP. It does **not** bind ports 80/443 and does **not** manage TLS — Pangolin
+does that.
+
+## 3. Expose it through Pangolin
+
+In Pangolin, create a resource for your domain (e.g. `dashboard.example.com`):
+
+- **Target**: the app over HTTP — `http://<host-ip>:3000` (or the app container /
+  Newt-reachable address, depending on how Newt reaches this host).
+- Let Pangolin provision the TLS certificate for the domain.
+- Ensure the resource's DNS for the domain is live.
+
+The dashboard is now reachable at `https://your-domain` (showing the snapshot
+until you connect Strava).
+
+> Hardening: if Pangolin reaches the app over the local network only, you can
+> bind the port to loopback by changing `ports: "3000:3000"` to
+> `ports: "127.0.0.1:3000:3000"` in `docker-compose.yml` so port 3000 isn't
+> exposed publicly.
 
 ## 4. Connect Strava (once)
 

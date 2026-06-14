@@ -9,25 +9,10 @@ services:
       STRAVA_TOKEN_FILE: /data/strava-token.json
     volumes:
       - strava-data:/data
-    expose:
-      - "3000"
-
-  caddy:
-    image: caddy:2-alpine
-    restart: unless-stopped
-    depends_on:
-      - app
+    # Pangolin (external reverse proxy) terminates TLS and forwards to this port
+    # over plain HTTP. No 80/443 handling here.
     ports:
-      - "80:80"
-      - "443:443"
-    environment:
-      DOMAIN: ${DOMAIN}
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
+      - "3000:3000"
 
 volumes:
   strava-data:
-  caddy_data:
-  caddy_config:
