@@ -2,8 +2,11 @@ import { getStravaSource, isLive } from "@/lib/strava";
 import { buildDashboard } from "@/lib/training/derive";
 import { StravaStatus } from "@/components/StravaStatus";
 
-// Incrementally re-render every 10 minutes — the "on-load refresh" cadence.
-export const revalidate = 600;
+// Render per-request so the Strava connection status (token presence, read from
+// disk) is always accurate — otherwise a build-time static prerender freezes it
+// to "Snapshot". The underlying Strava fetches stay cached (revalidate: 600 in
+// live-source), so this adds no extra API calls and keeps the ~10-min cadence.
+export const dynamic = "force-dynamic";
 import { Reveal } from "@/components/Reveal";
 import { RailNav } from "@/components/RailNav";
 import { TopBar } from "@/components/TopBar";

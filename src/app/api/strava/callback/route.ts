@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { exchangeCode } from "@/lib/strava/oauth";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +21,9 @@ export async function GET(req: Request) {
 
   try {
     await exchangeCode(code);
+    // The token now exists on disk, so the factory will pick LiveStravaSource.
+    // Bust the cached snapshot render so the dashboard flips to live immediately.
+    revalidatePath("/");
     return NextResponse.redirect(`${base}/?strava=connected`);
   } catch (e) {
     console.error("Strava token exchange failed:", e);

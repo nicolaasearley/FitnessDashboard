@@ -31,7 +31,7 @@ export class LiveStravaSource implements StravaDataSource {
     for (const [k, v] of Object.entries(params ?? {})) url.searchParams.set(k, String(v));
     const res = await fetch(url, {
       headers: { Authorization: `Bearer ${token}` },
-      next: { revalidate: REVALIDATE },
+      next: { revalidate: REVALIDATE, tags: ["strava"] },
     });
     if (!res.ok) {
       throw new Error(`Strava API ${res.status} on ${path}: ${await res.text()}`);
