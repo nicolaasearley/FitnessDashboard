@@ -1,4 +1,5 @@
 import type { StravaDataSource } from "./source";
+import type { StravaSnapshot } from "./types";
 import { MockStravaSource } from "./mock-source";
 import { LiveStravaSource } from "./live-source";
 import { isConfigured } from "./oauth";
@@ -21,6 +22,24 @@ export function getStravaSource(): StravaDataSource {
 /** True when reading live from Strava (vs the committed snapshot). */
 export function isLive(): boolean {
   return isConfigured() && hasTokenSync();
+}
+
+/**
+ * Fetches the dashboard data with a safety net: when Strava is connected we read
+ * live, but if that fetch fails for *any* reason — rate limit (429), outage,
+ * expired token — we fall back to the committed snapshot rather than 500-ing the
+ * whole page. `live` reports whether the returned data actually came from Strava.
+ */
+export async function getDashboardSnapshot(): Promise<{ snapshot: StravaSnapshot; live: boolean }> {
+  if (isLive()) {
+    try {
+      const snapshot = await new LiveStravaSource().getSnapshot();
+      return { snapshot, live: true };
+    } catch (e) {
+      console.error("Live Strava fetch failed; serving committed snapshot instead:", e);
+    }
+  }
+  return { snapshot: await new MockStravaSource().getSnapshot(), live: false };
 }
 
 export type { StravaDataSource } from "./source";

@@ -34,6 +34,12 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 
+# Pre-create the fetch/data cache dir owned by the runtime user. A named volume
+# mounted here (see docker-compose) inherits this ownership on first init, so
+# the Strava fetch cache survives image rebuilds instead of cold-starting and
+# hammering the API. Without this the volume would be root-owned and unwritable.
+RUN mkdir -p /app/.next/cache && chown -R nextjs:nodejs /app/.next
+
 USER nextjs
 EXPOSE 3000
 VOLUME ["/data"]

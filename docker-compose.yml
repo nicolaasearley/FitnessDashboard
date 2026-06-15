@@ -9,6 +9,9 @@ services:
       STRAVA_TOKEN_FILE: /data/strava-token.json
     volumes:
       - strava-data:/data
+      # Persist Next.js's fetch/data cache so a rebuild doesn't wipe it and cold-
+      # start a burst of Strava API calls (which can blow the daily rate limit).
+      - next-cache:/app/.next/cache
     # Pangolin (external reverse proxy) terminates TLS and forwards to this port
     # over plain HTTP. No 80/443 handling here.
     ports:
@@ -16,3 +19,4 @@ services:
 
 volumes:
   strava-data:
+  next-cache:

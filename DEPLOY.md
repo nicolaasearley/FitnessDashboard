@@ -75,8 +75,12 @@ git pull && docker compose up -d --build
 
 ## Notes
 
-- **Rate limits**: ~13 Strava calls per 10-minute window — comfortably within
-  Strava's 200 req/15 min.
+- **Rate limits**: a full render is ~12 Strava calls, cached for ~30 min, so
+  steady traffic stays well under Strava's 1000-requests/day app limit (and the
+  100/15-min limit). The fetch cache is persisted on the `next-cache` volume so
+  an image rebuild doesn't wipe it and cold-start a burst of calls. If Strava
+  ever errors (rate limit, outage, expired token) the page falls back to the
+  committed snapshot instead of failing — the footer dot just shows "Snapshot".
 - **All-time PRs**: Strava has no lifetime-PR endpoint, so pre-2026 bests are
   cached in `src/data/historical-best-efforts.json` and merged with recently
   fetched activities. Add older standout runs there if you want deeper history.

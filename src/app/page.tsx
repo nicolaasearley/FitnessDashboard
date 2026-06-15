@@ -1,4 +1,4 @@
-import { getStravaSource, isLive } from "@/lib/strava";
+import { getDashboardSnapshot } from "@/lib/strava";
 import { buildDashboard } from "@/lib/training/derive";
 import { StravaStatus } from "@/components/StravaStatus";
 
@@ -20,10 +20,8 @@ import { PrPanel } from "@/components/PrPanel";
 import { HighlightsPanel } from "@/components/HighlightsPanel";
 
 export default async function Home() {
-  const source = getStravaSource();
-  const snapshot = await source.getSnapshot();
+  const { snapshot, live } = await getDashboardSnapshot();
   const d = buildDashboard(snapshot);
-  const live = isLive();
 
   return (
     <>

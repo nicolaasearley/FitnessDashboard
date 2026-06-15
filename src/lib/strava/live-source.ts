@@ -16,8 +16,13 @@ import type { StravaDataSource } from "./source";
 
 const STRAVA_API = "https://www.strava.com/api/v3";
 // Strava data changes slowly; cache fetches so even dynamic SSR only hits the
-// API roughly every 10 minutes (the "on-load refresh" cadence).
-const REVALIDATE = 600;
+// API every ~30 minutes. A full snapshot is ~12 calls, so at this cadence the
+// dashboard stays well under Strava's 1000-requests/day app limit even under
+// steady traffic. The footer "Refresh" button bypasses this on demand.
+const REVALIDATE = 1800;
+// How many recent GPS runs to pull detailed best-efforts for. Each is one API
+// call, so this is the dominant cost of a snapshot — keep it modest.
+const BEST_EFFORT_RUNS = 8;
 
 /**
  * Live Strava data source (OAuth). Maps Strava's REST responses onto the same
@@ -95,7 +100,7 @@ export class LiveStravaSource implements StravaDataSource {
   ): Promise<Record<string, BestEffort[]>> {
     const recentRuns = activities
       .filter((a) => a.sport_type === "Run" && a.distance > 0)
-      .slice(0, 12);
+      .slice(0, BEST_EFFORT_RUNS);
 
     const results = await Promise.all(
       recentRuns.map(async (a) => {
