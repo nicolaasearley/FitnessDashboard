@@ -530,14 +530,16 @@ function deriveHighlights(snapshot: StravaSnapshot, reference: Date): Highlights
  * Top-level assembly.
  * ------------------------------------------------------------------------- */
 
-export function buildDashboard(snapshot: StravaSnapshot): Dashboard {
+export function buildDashboard(snapshot: StravaSnapshot, now: Date = new Date()): Dashboard {
   const activities = [...snapshot.activities].sort(
     (a, b) => Date.parse(b.start_date_local) - Date.parse(a.start_date_local),
   );
-  // Anchor weekly/training math to the latest activity so the "current week"
-  // is always populated regardless of when the dashboard is viewed. The race
-  // countdown uses real wall-clock time (client-side).
+  // Weekly/zone stats are anchored to the latest activity so the "current week"
+  // panel is always populated regardless of when the dashboard is viewed.
   const reference = new Date(activities[0]?.start_date_local ?? snapshot.fetched_at);
+  // The training block (week number, phase, progress, days-to-goal) tracks real
+  // wall-clock time — it must advance as the calendar does, even on a rest day.
+  const blockNow = activities.length ? now : reference;
 
   const races: RaceCountdown[] = config.goalRaces
     .map((r) => ({ ...r }))
@@ -549,7 +551,7 @@ export function buildDashboard(snapshot: StravaSnapshot): Dashboard {
     athleteFirst: snapshot.athlete.firstname,
     location: `${snapshot.athlete.city}, ${snapshot.athlete.state}`,
     referenceDate: reference.toISOString(),
-    block: deriveBlock(reference),
+    block: deriveBlock(blockNow),
     races,
     primaryRace,
     targetPaces: config.targetPaces.map((p) => ({
