@@ -534,11 +534,13 @@ export function buildDashboard(snapshot: StravaSnapshot, now: Date = new Date())
   const activities = [...snapshot.activities].sort(
     (a, b) => Date.parse(b.start_date_local) - Date.parse(a.start_date_local),
   );
-  // Weekly/zone stats are anchored to the latest activity so the "current week"
-  // panel is always populated regardless of when the dashboard is viewed.
+  // Zone distribution (a trailing 28-day window) is anchored to the latest
+  // activity so the panel always has data to show.
   const reference = new Date(activities[0]?.start_date_local ?? snapshot.fetched_at);
-  // The training block (week number, phase, progress, days-to-goal) tracks real
-  // wall-clock time — it must advance as the calendar does, even on a rest day.
+  // The training block (week number, phase, progress, days-to-goal) and the
+  // weekly-volume panel track real wall-clock time — "this week" must mean the
+  // current calendar week, and roll over to zero at the start of a new week
+  // even before anything is logged.
   const blockNow = activities.length ? now : reference;
 
   const races: RaceCountdown[] = config.goalRaces
@@ -559,7 +561,7 @@ export function buildDashboard(snapshot: StravaSnapshot, now: Date = new Date())
       paceSecPerKm: p.secPerKm,
       context: p.context,
     })),
-    week: deriveWeek(activities, reference),
+    week: deriveWeek(activities, blockNow),
     zones: deriveZones(activities, snapshot.zones, reference),
     prs: derivePrs(
       snapshot.best_efforts_by_activity,
